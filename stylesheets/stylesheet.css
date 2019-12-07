@@ -11,6 +11,11 @@ h2 a {color: #f42};
 
 h2 a:hover {color: #000;}
 
+/* 
+top bars
+*/
+
+/* nav links */
 
 .top-links {
   background-color: #131313;
@@ -43,14 +48,7 @@ h2 a:hover {color: #000;}
 
 .top-links ul li a:hover {color: rgba(255, 255, 255);}
 
-
-
-
-
-
-
-
-
+/* main header */
 
 .main-header {
   height: 48px;
@@ -61,6 +59,7 @@ h2 a:hover {color: #000;}
   justify-content: space-between;
 
   position: sticky;
+  top: 0;
   z-index: 99;
 }
 
@@ -97,4 +96,133 @@ h2 a:hover {color: #000;}
   transform: scaleX(-1);
   opacity: .6;
   border-right: 1px solid #eee;
+}
+
+/* 
+main body
+ */
+
+/* cover stories */
+
+
+
+
+.cover-stories {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: 450px;
+  background: linear-gradient(#eee, #fff 5%);
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  height: 544px;
+}
+
+@media only screen and (max-width: 1580px) {
+  .cover-stories {
+    height: 544px;
+  }
+}
+
+.cover {
+  position: relative;
+}
+
+.cover a {
+  color: #fff;
+}
+
+.cover:first-child {
+  grid-row: 1 / span 2;
+  background-image: linear-gradient(170deg, rgba(246,7,7,1) 0%, rgba(0,0,0,0) 65%), url(../assets/rickmorty.jpg);
+  background-size: cover, cover;
+}
+
+.logo {margin: 10px;}
+
+@media only screen and (max-width: 1580px) {
+  .logo {
+    height: 146px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .logo {
+    width: 55%;
+    height: auto;
+  }
+}
+
+.cover-date {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 14px;
+  color: #ffff
+}
+
+.cover header {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 80%);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+.cover header h5 {
+  margin: 0 20px 5px 20px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);  
+}
+
+.cover header h2 {
+  margin: 0 20px 15px 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cover:first-child header h2 {
+  font-size: 56px;
+  letter-spacing: -.015em;
+  font-weight: 700;
+  vertical-align: baseline;
+}
+
+.author-data {
+  margin: 0 20px 15px 20px;
+  list-style: none;
+}
+
+.author-data li {
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: hsla(0,0%,100%,.6);
+}
+
+.author-data li a {
+  color: inherit;
+}
+
+.author-data li img {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  filter: brightness(200%);
+}
+
+.cover:nth-child(2) {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/brooklyn.jpg);
+  background-size: cover;
+}
+
+.cover:nth-child(3) {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5) ), url(../assets/snapchat.png);
+  background-size: cover;
 }
