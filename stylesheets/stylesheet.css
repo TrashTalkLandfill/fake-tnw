@@ -247,7 +247,7 @@ down the page
 
 /* latest items */
 
-.latest-grid {
+.latest-grid, .funding-grid, .latest-deals-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(224px, 270px));
   justify-content: center;
@@ -292,4 +292,111 @@ down the page
   content: "\B7";
   display: inline-block;
   margin-left: 4px;
+}
+
+/* funding section */
+
+.funding-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.funding-links {
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #f42;
+}
+
+.funding-links li {
+  margin: 0 10px;
+}
+
+.funding-links li a {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #f42;
+}
+
+.funding-item {
+  position: relative;
+  height: 270px;
+  background-color: #fffaf8;
+}
+
+.funding-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.funding-header-top {
+  height: 40px;
+  background-color: #f42;
+}
+
+.funding-header-top h4 {
+  padding-top: 11px;
+  margin-left: 100px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.funding-header-bottom {
+  height: 60px;
+  background: rgba(255,68,34,.08);
+}
+
+.funding-header-bottom h4, .funding-header-bottom h5 {
+  margin-left: 100px;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.funding-header-bottom h4 {
+  padding-top: 13px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.funding-header-bottom h5 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.funding-category {
+  display: block;
+  margin: 15px;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #555;
+}
+
+.funding-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding-left: 5px;
+  transform: scaleX(-1);
+}
+
+.funding-story {
+  display: block;
+  padding: 15px;
+  border-top: 1px solid rgba(255,68,34,.25);
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555;
+}
+
+.funding-story span {
+  color: #aaa;
 }
