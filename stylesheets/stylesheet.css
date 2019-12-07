@@ -226,3 +226,70 @@ main body
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5) ), url(../assets/snapchat.png);
   background-size: cover;
 }
+
+/* 
+down the page 
+ */
+
+
+.latest, .funding, .categories, .latest-deals {
+  margin: 80px auto 0 auto;
+  max-width: 1176px;
+}
+
+.latest h2, .funding h2 {
+  margin-bottom: 28px;
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* latest items */
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(224px, 270px));
+  justify-content: center;
+  grid-gap: 20px;
+  margin: 0 20px;
+}
+
+.latest-item {
+  height: 227px;
+}
+
+.latest-item a {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.latest-item a img {
+  width: 100%;
+  height: 135px;
+}
+
+.latest-item a h4 {
+  margin: 5px 0;
+}
+
+.latest-item ul li {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.latest-item ul li a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.latest-item ul li:first-child:after {
+  content: "\B7";
+  display: inline-block;
+  margin-left: 4px;
+}
