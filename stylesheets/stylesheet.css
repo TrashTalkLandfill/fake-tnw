@@ -559,3 +559,107 @@ down the page
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url(../assets/make_games.jpg);
   background-size: cover;
 }
+
+.category-podium .category-header {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url(../assets/ios13.png);
+  background-size: cover;
+}
+
+.category-insights .category-header {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url(../assets/bitcoin_dwight.jpg);
+  background-size: cover;
+}
+
+.category-launch .category-header {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url(../assets/amazon_grocery.jpg);
+  background-size: cover;
+}
+
+.category-distract .category-header {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url(../assets/tesla_break.png);
+  background-size: cover;
+}
+
+/* latest deals */
+
+.latest-deals {
+  margin-bottom: 80px;
+}
+
+.latest-deals header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 30px 20px;
+}
+
+.latest-deals header a {
+  font-size: 16px;
+  color: #f42;
+  font-family: sans-serif;
+}
+
+.latest-deals header h2 a {
+  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.latest-deals-item {
+  position: relative;
+  height: auto;
+}
+
+.latest-deals-item a {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.latest-deals-item a img {
+  width: 100%;
+  height: auto;
+}
+
+.discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to bottom left, #fc0 50%, transparent 50% 100%);
+}
+
+.discount-size {
+  position: absolute;
+  top: 23px;
+  left: 18px;
+  transform: rotate(45deg);
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.latest-deals-item a h4 {
+  margin: 5px 0;
+}
+
+.latest-deals-item ul li {
+  margin-right: 4px;
+  font-family: sans-serif;
+}
+
+.old-price {
+  font-size: 13px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 16px;
+  color: #555;
+}
+
