@@ -98,6 +98,41 @@ top bars
   border-right: 1px solid #eee;
 }
 
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header-logo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 22px;
+    padding: 13px 16px;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+  }
+
+  .main-header nav {
+    margin-left: 104px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .top-links, .main-header nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    border-left: 1px solid #eee;
+  }
+}
+
+
+
+
 /* 
 main body
  */
@@ -227,6 +262,72 @@ main body
   background-size: cover;
 }
 
+
+@media only screen and (max-width: 1580px) {
+  .cover-stories {
+    height: 544px;
+  }
+
+  .logo {
+    height: 146px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .logo {
+    width: 55%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo,
+  .cover-date,
+  .cover:nth-child(2) header ul li:last-child,
+  .cover:nth-child(3) header ul li:last-child {
+    display: none;
+  }
+
+  .cover:first-child {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/rickmorty.jpg);
+  }
+
+  .cover header h5,
+  .cover header a h2 {
+    margin: 0 10px 5px 10px;
+  }
+
+  .author-data {
+    margin: 0 10px 15px 10px;
+  }
+
+  .cover:first-child header h2 {
+  font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .cover-stories {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .cover {
+    height: 225px;
+  }
+
+  .cover header h2,
+  .cover:first-child header h2 {
+    font-size: 20px;
+  }
+
+  .cover header h5,
+  .cover header ul {
+    margin: 0 10px 5px 10px;
+  }
+}
+
+
 /* 
 down the page 
  */
@@ -293,6 +394,48 @@ down the page
   display: inline-block;
   margin-left: 4px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .latest-grid {
+    grid-template-columns: repeat(3, minmax(225px, 310px));
+  }
+
+  .latest-item a img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .latest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .latest-item {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    column-gap: 10px;
+    height: auto;
+  }
+
+  .latest-item a:first-child {
+    grid-row: 1 / span 3;
+  }
+
+  .latest-item a img {
+    height: 75px;
+  }
+
+  .latest-item a h4 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .latest-item ul {
+    margin-top: 0;
+  }
+}
+
 
 /* funding section */
 
@@ -400,6 +543,49 @@ down the page
 .funding-story span {
   color: #aaa;
 }
+
+@media only screen and (max-width: 1000px) {
+  .funding-grid {
+    grid-template-columns: repeat(3, minmax(225px, 310px));
+  }
+
+  .funding-item:last-child {
+    display: none;
+  }
+
+  .funding-header-main {
+    flex-direction: column;
+  }
+
+  .funding-links {
+    margin: -10px 0 25px 10px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .funding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .funding-item {
+    height: auto;
+  }
+
+  .funding-links {
+    margin: -20px 0 10px 20px;
+  }
+
+  .funding-links li a {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .separator {
+    display: none;
+  }
+}
+
 
 /* categories section */
 
@@ -580,6 +766,39 @@ down the page
   background-size: cover;
 }
 
+@media screen and (max-width: 1000px) {
+  .categories {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .category {
+    height: auto;
+  }
+
+  .category-header {
+    padding-top: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .latest-deals-grid {
+    grid-template-columns: repeat(3, minmax(225px, 310px));
+  }
+
+  .latest-deals-item a img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 /* latest deals */
 
 .latest-deals {
@@ -663,6 +882,54 @@ down the page
   color: #555;
 }
 
+@media only screen and (max-width: 1000px) {
+  .latest-deals-grid {
+    grid-template-columns: repeat(3, minmax(225px, 310px));
+  }
+
+  .latest-deals-item a img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .latest-deals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discount {
+    display: none;
+  }
+
+  .latest-deals-item {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 1fr 20px 1fr auto;
+    column-gap: 10px;
+    height: 75px;
+  }
+
+  .latest-deals-img {
+    grid-row: 1 / span 3;
+  }
+
+  .latest-deals-item a img {
+    height: 75px;
+  }
+
+  .latest-deals-item a h4 {
+    display: block;
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .latest-deals-item ul {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
 /* 
 footer
  */
@@ -734,4 +1001,20 @@ footer
   position: relative;
   top: 4px;
   height: 16px;
+}
+
+@media only screen and (max-width: 760px) {
+  .social li {
+    padding: 2px;
+  }
+
+  .footer-nav li {
+    margin: 0 1px;
+  }
+
+  .copyright .wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 4px;
+  }
 }
